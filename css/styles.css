@@ -75,8 +75,6 @@ img {
   height: auto;
 }
 
-/* outline: 2px solid tomato;
-  outline-offset: -2px;*/
 
 h1,
 h2,
@@ -231,7 +229,6 @@ p {
     url(../images/hero/hego-fon.jpg);
 }
 
-/* rgba(47, 48, 58, 0.4) */
 
 /* section */
 
@@ -593,32 +590,4 @@ p {
   fill: var(--accent-color);
 }
 
-/*.icons-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
 
-.icons-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: var(--background-white);
-  border-radius: 50%;
-}
-
-.socials-icon {
-  fill: var(--icons-colorgrey);
-}
-
-.icons-link:hover {
-  background-color: var(--accent-color);
-}
-
-.icons-link:hover .socials-icon {
-  fill: var(--background-white);
-}
-*/
