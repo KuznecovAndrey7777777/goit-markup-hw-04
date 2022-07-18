@@ -75,7 +75,6 @@ img {
   height: auto;
 }
 
-
 h1,
 h2,
 h3,
@@ -90,7 +89,6 @@ p {
 .header-container {
   display: flex;
   align-items: center;
-  padding: 24px 25px;
 }
 
 .header-list {
@@ -227,8 +225,10 @@ p {
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/hego-fon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 /* section */
 
@@ -405,7 +405,6 @@ p {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
-  margin-top: 0px;
   margin-bottom: 20px;
   color: var(--background-white);
 }
@@ -416,7 +415,7 @@ p {
 }
 
 .footer-container-right {
-  padding-left: 70px;
+  margin-left: 70px;
 }
 
 /* section portfolio */
@@ -511,12 +510,12 @@ p {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--background-white);
   border-radius: 50%;
+  color: var(--icons-colorgrey);
 }
 
 .socials-icon {
-  fill: var(--icons-colorgrey);
+  fill: currentColor;
 }
 
 .icons-link:hover {
@@ -524,7 +523,7 @@ p {
 }
 
 .icons-link:hover .socials-icon {
-  fill: var(--background-white);
+  color: var(--background-white);
 }
 
 /* footer icon */
@@ -575,19 +574,24 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--icons-colorgrey);
 }
 
 .logo-icon {
-  fill: var(--icons-colorgrey);
+  fill: currentColor;
 }
 
-.icons-logo-link:hover {
-  border: 1px solid var(--accent-color);
+.icons-logo-link:hover,
+.icons-logo-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
-.icons-logo-link:hover .logo-icon {
-  fill: var(--accent-color);
-}
-
-
